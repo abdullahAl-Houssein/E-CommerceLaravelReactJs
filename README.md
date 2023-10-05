@@ -16,6 +16,7 @@ An online store powered by Laravel and ReactJs.
 ## Technologies used
 - **PHP - Laravel - APIs**
 - **JS - ReactJs - HTML - CSS**
+- **Mysql**
 ## Pictures About the Project
 ![Image 1](https://github.com/abdullahAl-Houssein/E-CommerceLaravelReactJs/assets/93677750/7aecb6ab-a16f-43a8-a92a-94e2322f2223)
 ![Image 2](https://github.com/abdullahAl-Houssein/E-CommerceLaravelReactJs/assets/93677750/af9cad5e-eda5-4930-ad64-bef6e456f4bc)
