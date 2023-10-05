@@ -1,0 +1,103 @@
+/* CartPage.css */
+
+/* Container styles */
+.cart-container-cart   {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.cart-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Cart item styles */
+.cart-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+  transform: scale(1.03);
+}
+
+/* Product image styles */
+.cart-item-image {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.cart-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cart-button:hover {
+  background-color: #0056b3;
+}
+
+/* Total Price styles */
+.cart-total-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Submit Order button styles */
+.cart-submit-button {
+  background-color: #28a745;
+  transition: background-color 0.3s ease-in-out;
+}
+.cart-submit-button-2 {
+  background-color: #28a745;
+  margin-left: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.cart-submit-button-2:hover {
+  background-color: #1d9238;
+}
+.cart-submit-button:hover {
+  background-color: #1d9238;
+}
+
+/* Error message styles */
+.cart-error-message {
+  color: #ff0000;
+  margin-top: 10px;
+  font-size: 14px;
+}
+span{
+  color: #1d9238;
+}

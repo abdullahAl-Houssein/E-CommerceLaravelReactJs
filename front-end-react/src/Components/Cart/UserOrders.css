@@ -1,0 +1,56 @@
+/* UserOrders.css */
+
+/* Container styles */
+.user-orders-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .user-orders-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Order list styles */
+  .user-orders-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Order item styles */
+  .user-order-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Total Price styles */
+  .user-orders-total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Error message styles */
+  .user-orders-error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

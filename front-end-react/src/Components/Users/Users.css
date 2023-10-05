@@ -1,0 +1,112 @@
+/* Users.css */
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: calc(33.33% - 20px);
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-card h3 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.user-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.user-roles {
+  margin-top: 10px;
+  display: flex;
+  align-items: center; /* توسيط العناصر عمودياً */
+}
+
+.user-roles span {
+  font-weight: bold;
+  margin-right: 10px; /* تمييز بين النص وقائمة الأدوار */
+}
+
+.user-roles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-roles li {
+  font-size: 16px;
+  color: #555;
+  margin-right: 5px;
+}
+
+.user-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.edit-button,
+.delete-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #2980b9;
+}
+
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; 
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #3498db; 
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,344 @@
+.navbar {
+    background: #091a3f;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+  
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+  
+.container-nav {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+  
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+  
+.navbar-icon {
+    margin-right: 0.5rem;
+}
+  
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+}
+  
+.nav-item {
+    height: 80px;
+    border-bottom: 2px solid transparent;
+}
+  
+.nav-item:hover {
+    border-bottom: 2px solid #eee;
+}
+  
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+  
+.fa-bars {
+    color: #fff;
+}
+  
+.menu-icon {
+    display: none;
+}
+  
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 92vh;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #1e1c22;
+        left: 0;
+        opacity: 1;
+        transition: all 0.6s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        color: #fff;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+    }
+
+    .nav-item:hover {
+        border: none;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+    }
+}
+
+
+
+.cart-container {
+    position: relative;
+  }
+  
+  .cart-icon {
+    text-decoration: none;
+    color: #e7d619; /* لون الأيقونة */
+  }
+  
+  .cart-item-count {
+    position: absolute;
+    top: -12px; 
+    right: -12px; 
+    background-color: red; 
+    color: white; 
+    border-radius: 50%;
+    width: 15px; 
+    height: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; 
+  }
+
+  .user-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .user-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-right: 10px; /* تمديد المسافة بين الأيقونة واسم المستخدم */
+  }
+  
+  .user-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .logout-button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #fff;
+    color: #000; /* لون النص عند التحويل */
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px; /* توسيع المسافة بين اللوغو وحقل البحث */
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    background-color: #fff;
+    color: #070404;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
+  }
+  
+  .search-results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .search-results ul li {
+    padding: 10px;
+  }
+  
+  .search-results p {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  /* اخفاء نافذة البحث إذا لم تكن مرئية */
+  .search-results:not(:visible) {
+    display: none;
+  }
+  /* تنسيق حقل البحث وزر البحث بجانب بعضهما */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px; /* توسيع المسافة بين اللوغو وحقل البحث */
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    flex: 1; /* يساوي حجم متغير لتعبئة المساحة المتبقية */
+  }
+  
+  .search-button {
+    background-color: #fff;
+    color: #070404;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* تنسيق نتائج البحث */
+  .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
+  }
+  
+  .search-results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .search-results ul li {
+    padding: 10px;
+  }
+  
+  .search-results p {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  /* اخفاء نافذة البحث إذا لم تكن مرئية */
+  .search-results:not(:visible) {
+    display: none;
+  }
+  
